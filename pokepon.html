@@ -3,19 +3,28 @@
     <head>
         <meta charset="utf-8" />
         <title>MOKEPON!</title>
-    
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles.css"> 
     </head>
     <body>
         <section id="seleccionar-mascota">
-            <h1 class="titulo">Mokepon</h1>
+            <h1 class="titulo">Mokepono</h1> 
 
             <h2 class="subtitulo">Elige tu mascota:</h2>
 
-            <div class="tarjetas" id="contenedorTarjetas">
+            <div id='contenedorTarjetas' class="tarjetas">
+                
             </div>
 
             <button id="boton-mascota">Seleccionar</button>
+        </section>
+
+        <section id="ver-mapa">
+            <h1 class="titulo">Recorre el mapa con tu mokepon</h1> 
+            <canvas id="mapa"></canvas>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
         </section>
 
         <section id="seleccionar-ataque">
@@ -23,7 +32,7 @@
 
             <h2 class="subtitulo">Elige tu ataque:</h2>
 
-            <div id="contenedorAtaques" class="tarjetas-ataques">
+            <div id='contenedorAtaques' class="tarjetas-ataques">
 
             </div>
 
@@ -41,13 +50,13 @@
                     <p id="mascota-jugador"></p>
                     <div id="ataques-del-jugador"></div>
                 </div>
-                <div class="ataques-enemigo">
+                <div class="ataques-enemigo">   
                     <p id="vidas-enemigo">0</p>
                     <p id="mascota-enemigo"></p>
                     <div id="ataques-del-enemigo"></div>
                 </div>
             </div>
         </section>
-        <script src="./pokepon.js"></script>
+        <script src="pokepon.js"></script>
     </body>
 </html>

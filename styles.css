@@ -2,7 +2,9 @@
 
     body {
     font-family: 'Poppins', sans-serif;
-    background-color: #041562;
+    background-image: url(./media/fondoazulitoclaro.png);
+	background-size: cover;
+	
     }
 
     #seleccionar-mascota {
@@ -31,7 +33,7 @@
     .tarjeta-de-mokepon {
     width: 180px;
     height: 100px;
-    background: #11468F;
+    background: #173969;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
@@ -60,6 +62,10 @@
     display: none;
     }
 
+    input:checked + label {
+    background-color: #5D8BF4;
+    }
+
     #seleccionar-ataque {
     display: flex;
     flex-direction: column;
@@ -72,7 +78,7 @@
     box-sizing: border-box;
     border-radius: 20px;
     border-color: transparent;
-    width: 180px;
+    width: 80px;
     color: white;
     font-family: 'Poppins', sans-serif;
     }
@@ -111,9 +117,20 @@
     align-items: center;
     }
 
+
+
+
+
+    #ver-mapa {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
     @media (max-width: 360px) {
     .tarjetas, .tarjetas-ataques {
         flex-direction: column;
     }
-
-}
+    }
